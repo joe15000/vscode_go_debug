@@ -31,5 +31,5 @@ COPY --from=builder /go/bin/dlv /
 # 30000 for delve
 EXPOSE 30000
 
-# Start headless Delve server, launching the app, listening on port 40000
+# Start headless Delve server, launching the app, listening on port 30000
 CMD ["/dlv","--listen=:30000","--headless=true","--api-version=2", "exec", "./app1"]

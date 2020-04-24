@@ -28,7 +28,7 @@ COPY --from=builder /app1 ./
 # Copy delve
 COPY --from=builder /go/bin/dlv /
 
-# 40000 for delve
+# 30000 for delve
 EXPOSE 30000
 
 # Start headless Delve server, launching the app, listening on port 40000
